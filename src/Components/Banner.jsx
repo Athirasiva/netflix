@@ -14,6 +14,7 @@ function Banner({fetchUrl}) {
     useEffect(()=>{
         getMovie()
     },[])
+    console.log(movie);
     
   return (
     <div style={{
@@ -22,7 +23,11 @@ function Banner({fetchUrl}) {
         height: '600px',
         backgroundSize: 'cover'
     }}>
-       <h5 style={{color:'white'}}>{movie?.title}</h5> 
+      <div style={{padding:'350px 100px'}}>
+      <h1 style={{color:'white'}} >{movie?.title}</h1> 
+      <p style={{color:'white'}}>{movie?.overview}</p>
+      </div>
+      
     </div>
   )
 }
