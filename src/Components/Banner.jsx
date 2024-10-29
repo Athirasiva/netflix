@@ -7,14 +7,14 @@ function Banner({fetchUrl}) {
 
     const getMovie = async()=>{
        const {data} = await tmdbAxiosInstance.get(fetchUrl) 
-       console.log(data.results[Math.floor(Math.random()*data.results.length)]);
+      //  console.log(data.results[Math.floor(Math.random()*data.results.length)]);
        setMovie(data.results[Math.floor(Math.random()*data.results.length)])
     }
 
     useEffect(()=>{
         getMovie()
     },[])
-    console.log(movie);
+    // console.log(movie);
     
   return (
     <div style={{
@@ -25,7 +25,7 @@ function Banner({fetchUrl}) {
     }}>
       <div style={{padding:'350px 100px'}}>
       <h1 style={{color:'white'}} >{movie?.title}</h1> 
-      <p style={{color:'white'}}>{movie?.overview}</p>
+      <p style={{color:'white'}}>{movie?.overview?.slice(0,150)}</p>
       </div>
       
     </div>

@@ -1,0 +1,9 @@
+.navigation-bar {
+    max-height: 40px;
+    position: fixed;
+    margin-top: 20px;
+    z-index: 1;
+}
+.nav-show{
+    background-color: black;
+}

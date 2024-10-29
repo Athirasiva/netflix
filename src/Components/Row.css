@@ -1,0 +1,28 @@
+ ::-webkit-scrollbar{
+    display: none;
+ }
+ .title{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+ }
+.movie-row{
+    margin-top: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+.movie{
+    width: 250px;
+    max-height: 200px;
+    margin-right: 10px;
+    transition:  1s;
+}
+.movie-poster{
+    max-height: 250px;
+}
+.movie:hover{
+    transform: scale(1.06);
+}
+html{
+    overflow-x: hidden;
+}
