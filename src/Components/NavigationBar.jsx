@@ -10,11 +10,11 @@ function NavigationBar() {
         setShow(false)
       }
     })
-  },[])
+  })
  
   return (
-    <div>
-        <img src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png"  alt=""  className={`${show && 'nav-show'}navigation-bar`}/>
+    <div className={`${show && 'nav-black'} nav`}>
+        <img width={'150px'} src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png"  alt=""  />
     </div>
   )
 }
